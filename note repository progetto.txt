@@ -1,0 +1,33 @@
+Sistema tutti I file riguardanti il progetto in questa repo + inizializza un venv su questa repo che possa runnare tutto il mio codice + fai test per verificare che sia tutto runnabile (forse basta che girino le cose per scaricare i dataset perché il modello non lo ranno in locale ma comunque installo tutte le dependency per fare in modo che avendo una GPU potenzialmente tutto funzioni. Dedica tempo alla fine per verificare in ogni file il fatto che siano runnabili
+
+
+OVVIAMENTE aggiungi anche il file requirement per salvare il tutto.
+
+-------------------
+
+
+NOTE PAPER
+*abstsact- Introduction
+- Previous research (predictive paper)
+- Methods: Data & Measures & Models
+- Empirical results
+- Discussion & conclusion (+ References and possibly an Appendix
+
+----------------------
+Introduzione = descrivi brevemente il conflitto Israelo palestinese, introduci l'importanza di analizzare il sentiment / informazioni dell'opinione pubblica attraverso i social e i benefici che fare questa cosa può darci. Descrivi alcune delle precedenti analisi che sono state fatte su questo conflitto per analizzare l'opinione pubblica e la novità introdotta da questo studio che si propone di utilizzare i transformers model. Infine descrivi le research question che intendiamo investigare e le loro motivazioni (dividi anche in sub sezioni).
+
+Data = nella sezione data devi innanzi tutto definire (anche guardando research desing quali sono i dati che intendiamo analizzare (unità di analisi popolazione etc), descrivi poi il metodo con il quale hai raccolto questi dati. Spiega che principalmente hai 2 gruppi di dataset, il dataset fi finetuning criterio con cui è stato creato e scopo, dataset di inference, spiega anche questi come sono stati selezionati criteri + tabella che mostra i dati (dimensione etc)
+
+Modelli = spiega brevemente che l'analisi si basa sull' utilizzo dei transformers model, introducili brevemente e spiega brevemente le loro qualità. Descrivi Bert e Bert topic.
+(Misure) sezione di modelli in cui spieghi il metodo di evaluation brevemente e le metriche per valutare se serve (valuta).
+
+
+ANALISI = sentiment analisis, spiega l'analisi grafici risultati ottenuti commentali e presenta considerazioni, stessa cosa per topic modelling.
+
+
+DISCUSSIONE = sui risultati e recup + cosa si potrebbe fare per migliorare l'analisi 
+
+CONCLUSIONE = recup dei risultati trovati 
+
+
+REFERENCE + APPENDIX  
