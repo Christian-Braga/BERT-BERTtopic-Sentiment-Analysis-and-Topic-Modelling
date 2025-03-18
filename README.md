@@ -5,7 +5,7 @@ This project analyzes public sentiment and discussion topics on the Israeli-Pale
 # Files
 - Dataset  = Folder containing the dataset used for fine-tuning BERT, the 6 datasets of the analyzed videos, and the 6 datasets of the videos with their respective predictions.
 - img = folder containing the plots
-- quarto_paper = folder containing the quarto file to run the paper:   , and the pdf of the paper:
+- quarto_paper = folder containing the quarto file to run the paper: Braga_Christian_paper.qmd, and the pdf of the paper: Braga_Christian_paper.pdf
 - Research_Design_CSS_Project_Christian_Braga.pdf: research desing of the project
 - dataset_creation.ipynb = code used to build the datasets
 - BERT_model.ipynb = code used to create the BERT model used in the sentiment analysis
