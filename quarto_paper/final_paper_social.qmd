@@ -193,10 +193,11 @@ To create all the comment datasets, it was necessary to utilize the API provided
 
 5. Sentiment Column Addition: For the purpose of model training and subsequent predictions, a 'sentiment' column was added to the dataset. Initially, this column was populated with default values, which were later replaced with actual sentiment labels either through manual labeling or automated predictions.
 
-While for the inference datasets i followed the same process but without shuffuled the data and without aggregating the comments of the different videos in one dataset.
+While for the inference datasets i followed the same process but without shuffuled the data and without aggregating the comments of the different videos in one dataset. Before applying the models, the comments underwent a series of preprocessing steps to prepare them for analysis. This preprocessing involved converting all text to lowercase for uniformity and removing any URLs to clean the data. Additionally, unnecessary spaces were reduced to a single space, and mentions and hashtags, indicated by '@' or '#', were stripped from the text. To facilitate effective model processing, the text was tokenized using the BERT model's tokenizer (bert-base-uncased), which breaks down the text into tokens suitable for input into the model.
 
 \newpage
 # Sentiment Analysis
+
 ```{python}
 #color palette for the plots
 # %matplotlib inline
