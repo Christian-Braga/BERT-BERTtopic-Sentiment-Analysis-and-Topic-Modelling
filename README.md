@@ -2,26 +2,77 @@
 
 This project analyzes public sentiment and discussion topics on the Israeli-Palestinian conflict using YouTube comments from major news channels. By leveraging Natural Language Processing (NLP) models, including BERT for sentiment analysis and BERTopic for topic modeling, the study examines how digital discourse evolves over time and across different news networks.
 
-# Files
-- Dataset  = Folder containing the dataset used for fine-tuning BERT, the 6 datasets of the analyzed videos, and the 6 datasets of the videos with their respective predictions.
-- img = folder containing the plots
-- quarto_paper = folder containing the quarto file to run the paper: Braga_Christian_paper.qmd, and the pdf of the paper: Braga_Christian_paper.pdf
-- Research_Design_CSS_Project_Christian_Braga.pdf: research desing of the project
-- dataset_creation.ipynb = code used to build the datasets
-- BERT_model.ipynb = code used to create the BERT model used in the sentiment analysis
-- BERT-topic_model.ipynb = code used to create the BERT-topic model used in the topic modelling analysis
-- requirements.txt = dependencies for the creation of the virtual env
+# Project Structure
+
+- **`Dataset/`**  
+  Contains all datasets used in the project:
+  - Dataset for fine-tuning the BERT model.
+  - Six datasets corresponding to the analyzed videos.
+  - Six datasets including the videos with their respective predictions.
+
+- **`img/`**  
+  Folder containing all the generated plots and visualizations.
+
+- **`quarto_paper/`**  
+  Contains the source and output of the project paper:
+  - `Braga_Christian_paper.qmd`: Quarto source file to compile the paper.
+  - `Braga_Christian_paper.pdf`: Final PDF version of the paper.
+
+- **`Research_Design_CSS_Project_Christian_Braga.pdf`**  
+  Research design document outlining the objectives, methodology, and structure of the project.
+
+- **`dataset_creation.ipynb`**  
+  Jupyter notebook used for preprocessing and constructing the datasets.
+
+- **`BERT_model.ipynb`**  
+  Notebook for training and evaluating the BERT model used in the sentiment analysis.
+
+- **`BERT-topic_model.ipynb`**  
+  Notebook implementing the BERT-based topic modeling approach.
+
+- **`requirements.txt`**  
+  List of dependencies required to set up the virtual environment for the project.
 
 # Installation / Run
 The models have been developed on google collab using the T4 GPU, to run the files of the models click on the file's names (BERT_model.ipynb and BERT-topic_model.ipynb) and click on the button : ![Screenshot 2025-03-18 at 14 37 07](https://github.com/user-attachments/assets/c9555b95-a463-42f8-bf66-e702d92e5209) to open a Google Collab notebook and run all the cells.
 
-To correctly run the QMD file, ensure that you have Python installed and that the Quarto extension is set up in your IDE. Follow these steps to set up the environment and execute the project:
-- Download or clone this repository to your local machine
-- Inside the cloned repository, create a virtual environment to manage dependencies
-- Once the virtual environment is activated, install the necessary dependencies from the requirements.txt file: pip install -r requirements.txt
-- Run / render the .qmd file of the project
+
+## Prerequisites
+- Python installed on your system
+- Quarto extension properly set up in your IDE (VS Code or RStudio)
+
+## Getting Started
+
+### Clone the Repository
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+
+### Environment Setup
+Create and activate a virtual environment:
+```bash
+python -m venv .venv
+source .venv/bin/activate # On Windows use: .venv\Scripts\activate
+```
+
+### Install Dependencies
+Install all required packages:
+```bash
+pip install -r requirements.txt
+```
+
+### Render the Paper
+Generate the final document:
+```bash
+quarto render quarto_paper/Braga_Christian_paper.qmd
+```
+
+> 💡 **Note:** Make sure Quarto is installed on your system. Download it from [https://quarto.org](https://quarto.org) and verify the installation with `quarto check`.
+
 
 # Project Overview
+
 This study investigates public sentiment on the Israeli-Palestinian conflict by analyzing comments from YouTube videos published by:
 Al Jazeera English
 CNN
@@ -29,9 +80,11 @@ Sky News
 The project explores sentiment trends over time, comparing October 2023 (after a pivotal event) with data from 2024. Additionally, it examines the impact of different news channels on public perception.
 
 # Dataset Collection
+
 The dataset consists of YouTube comments extracted from six videos published by the selected news channels. The YouTube API was used to retrieve comments, filtering them based on language and relevance.
 
 # Sentiment Analysis
+
 The fine-tuned BERT model was trained on 1,486 manually labeled comments to classify sentiment into three categories:
 Pro-Israel
 Pro-Palestine
@@ -39,12 +92,14 @@ Neutral
 The model achieved an accuracy of 76%, despite challenges such as irony, sarcasm, and implicit bias.
 
 # Topic Modeling
+
 Using BERTopic, the project identified key discussion topics from the comments. Some significant findings:
 Pro-Israel comments often discussed hostages, security concerns, and media bias.
 Pro-Palestine comments included themes of humanitarian crises, historical comparisons, and religious narratives.
 Neutral comments focused on media credibility, propaganda, and the geopolitical landsca
 
 # Results
+
 📊 Findings from the analysis include:
 
 A shift from neutral to more polarized opinions over time.
