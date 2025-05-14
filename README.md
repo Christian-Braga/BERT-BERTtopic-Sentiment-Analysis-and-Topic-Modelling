@@ -45,8 +45,8 @@ The models have been developed on google collab using the T4 GPU, to run the fil
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Christian-Braga/BERT-BERTtopic-Sentiment-Analysis-and-Topic-Modelling.git
+cd BERT-BERTtopic-Sentiment-Analysis-and-Topic-Modellin
 ```
 
 ### Environment Setup
